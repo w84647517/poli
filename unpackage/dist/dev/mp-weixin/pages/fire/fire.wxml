@@ -1,0 +1,1 @@
+<view><block wx:for="{{listLength}}" wx:for-item="i" wx:for-index="__i0__"><product-item vue-id="{{'59ff1300-1-'+__i0__}}" bind:__l="__l"></product-item></block></view>

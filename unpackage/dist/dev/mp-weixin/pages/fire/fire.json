@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "default",
+  "navigationBarTitleText": "热榜",
+  "usingComponents": {
+    "product-item": "/components/ProductItem/ProductItem"
+  }
+}

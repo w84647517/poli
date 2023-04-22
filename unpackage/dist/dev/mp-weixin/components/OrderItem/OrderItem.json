@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "count-down": "/components/CountDown/CountDown"
+  },
+  "component": true
+}

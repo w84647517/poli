@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-button": "/uni_modules/uview-ui/components/u-button/u-button",
+    "u-upload": "/uni_modules/uview-ui/components/u-upload/u-upload",
+    "u--textarea": "/uni_modules/uview-ui/components/u--textarea/u--textarea",
+    "u-popup": "/uni_modules/uview-ui/components/u-popup/u-popup"
+  }
+}

@@ -1,0 +1,16 @@
+.login-title {
+  margin-top: 80rpx;
+  margin-left: 20rpx;
+}
+.login-form {
+  margin-top: 100rpx;
+}
+.login-form-box {
+  margin: 0 auto;
+  width: 90%;
+}
+.login-form-fotter {
+  display: flex;
+  justify-content: space-between;
+}
+
