@@ -9,7 +9,7 @@
 
 		<view class="index-swiper" :style="{ paddingTop: swiperStyle.top + 'px' }">
 			<u-swiper
-				:list="['https://cdn.uviewui.com/uview/swiper/swiper3.png', 'https://cdn.uviewui.com/uview/swiper/swiper3.png']"
+				:list="bannerList"
 				indicator
 				indicatorMode="line"
 				circular
@@ -42,6 +42,7 @@
 
 <script>
 import ProductItem from '@/components/ProductItem/ProductItem.vue';
+import {getBanner } from '@/api/index.js'
 export default {
 	name: 'index',
 	components: {
@@ -50,6 +51,7 @@ export default {
 	data() {
 		return {
 			searchText: '',
+			bannerList:[],
 			searchStyle: {
 				top: 40
 			},
@@ -100,7 +102,10 @@ export default {
 			]
 		};
 	},
-	onLoad() {
+	async onLoad() {
+		//获取banner
+		const {data,code} = await getBanner()
+		this.bannerList = data.map(item=>item.imgs)|| []
 		// #ifdef MP-WEIXIN
 		let menuButtonInfo = uni.getMenuButtonBoundingClientRect();
 		console.log(menuButtonInfo);
@@ -116,6 +121,7 @@ export default {
 		// #endif
 	},
 	methods: {
+		
 		onSearch(value) {
 			if(value.trim()=='') return
 			uni.navigateTo({

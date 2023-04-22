@@ -58,7 +58,7 @@
 			</view>
 		</u-popup>
 		<u-popup :show="showExplan" round="20" mode="center">
-			<view style="padding:20rpx;width:90%;">
+			<view style="padding:20rpx;width:90%;min-width: 400rpx;">
 				<rich-text nodes="<img src=&quot;https://web-assets.dcloud.net.cn/unidoc/zh/uni@2x.png&quot;/>"></rich-text>
 				<view class="m-t-30"><u-button @click="onCloseExplan" shape="20" size="large" color="#0660FF" border>关闭</u-button></view>
 			</view>
@@ -218,7 +218,7 @@ export default {
 			flex-flow: column;
 			align-items: center;
 			.price {
-				font-size: 32rpx;
+				font-size: 28rpx;
 				color: #ff2020;
 				&::before {
 					content: '赏';

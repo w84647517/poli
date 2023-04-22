@@ -80,7 +80,7 @@
   align-items: center;
 }
 .detail-container .detail-item .price-box .price {
-  font-size: 32rpx;
+  font-size: 28rpx;
   color: #ff2020;
 }
 .detail-container .detail-item .price-box .price::before {
